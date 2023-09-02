@@ -1,10 +1,10 @@
-import { Home as HomeIcon, Search, Library, Plus, ArrowRight, ChevronDown } from 'lucide-react'
-import ImageLike from '../../public/liked.svg';
-import FormaImage from '../../public/forma.jpg';
-import AteuImage from '../../public/ateu.jpg';
-import AdoqImage from '../../public/adoq.jpg';
-import MaurinhoImage from '../../public/maurinho.jpg';
-import Image from 'next/image';
+import React from 'react';
+import { Home as HomeIcon, Search, Library, Plus, ArrowRight, ChevronDown } from 'lucide-react';
+import ImageLike from '../../../public/liked.svg';
+import FormaImage from '../../../public/forma.jpg';
+import AteuImage from '../../../public/ateu.jpg';
+import AdoqImage from '../../../public/adoq.jpg';
+import MaurinhoImage from '../../../public/maurinho.jpg';
 import { ItemPlaylist } from './ItemPlaylist';
 
 function SideBar() {
@@ -55,7 +55,7 @@ function SideBar() {
         </nav>
       </nav>
     </aside>
-  )
+  );
 }
 
 export { SideBar };

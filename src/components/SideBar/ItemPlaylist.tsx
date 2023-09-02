@@ -1,6 +1,8 @@
+import React from 'react';
 import Image from 'next/image';
 
 interface PlaylistProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   img: any;
   title: string;
   type: 'Playlist' | 'Album' | 'Artista';
@@ -16,7 +18,7 @@ function ItemPlaylist(props: PlaylistProps) {
         <span className='text-sm text-zinc-400'>{props.name}</span>
       </div>
     </div>
-  )
+  );
 }
 
-export { ItemPlaylist }
+export { ItemPlaylist };

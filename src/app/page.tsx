@@ -1,7 +1,6 @@
-import Image from 'next/image'
-import { Home as HomeIcon, Search, Library, Plus, ArrowRight, ChevronDown } from 'lucide-react'
 import { SideBar } from '@/components/SideBar';
 import { Main } from '@/components/Main';
+import React from 'react';
 
 export default function Home() {
   return (
@@ -14,5 +13,5 @@ export default function Home() {
         footer
       </footer>
     </div>
-  )
+  );
 }

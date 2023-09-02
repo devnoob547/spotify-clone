@@ -1,8 +1,10 @@
+import React from 'react';
 import { Play } from 'lucide-react';
 import Image from 'next/image';
 
 
 interface MainPlaylistProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   img: string | any;
   name: string;
 }
@@ -18,7 +20,7 @@ function MainPlaylist(props: MainPlaylistProps) {
         <Play className='text-black' fill='#000' />
       </button>
     </div>
-  )
+  );
 }
 
 export { MainPlaylist };
