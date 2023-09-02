@@ -1,29 +1,15 @@
 import { Home as HomeIcon, Search, Library, Plus, ArrowRight, ChevronDown } from 'lucide-react'
 import ImageLike from '../../public/liked.svg';
 import FormaImage from '../../public/forma.jpg';
+import AteuImage from '../../public/ateu.jpg';
+import AdoqImage from '../../public/adoq.jpg';
+import MaurinhoImage from '../../public/maurinho.jpg';
 import Image from 'next/image';
-
-interface PlaylistProps {
-  img: any;
-  title: string;
-  type: string
-}
-
-function ItemPlaylist(props: PlaylistProps) {
-  return (
-    <div className='flex items-center gap-2 rounded-md hover:bg-zinc-800 p-2 hover:cursor-pointer transition-all duration-300'>
-      <Image src={props.img} alt="Like" className='w-12 h-12 rounded-sm' />
-      <div className='flex flex-col justify-center'>
-        <span className='font-semibold'>{props.title}</span>
-        <span className='text-sm text-zinc-400'>{props.type}</span>
-      </div>
-    </div>
-  )
-}
+import { ItemPlaylist } from './ItemPlaylist';
 
 function SideBar() {
   return (
-    <aside className='w-80 bg-zinc-950 p-2 max-h-full'>
+    <aside className='w-80 bg-zinc-950 p-2 min-h-full flex flex-col'>
       <nav className='space-y-6 bg-zinc-900 p-4 rounded-lg'>
         <a href="" className='flex items-center gap-4 text-sm font-semibold text-zinc-400 hover:text-zinc-50 transition-all duration-300'>
           <HomeIcon />
@@ -34,7 +20,7 @@ function SideBar() {
           Buscar
         </a>
       </nav>
-      <nav className='bg-zinc-900 p-4 rounded-lg mt-2'>
+      <nav className='bg-zinc-900 p-4 rounded-lg mt-2 max-h-full flex-1'>
         <div className='flex items-center justify-between text-sm font-semibold text-zinc-400'>
           <a href="" className='flex items-center gap-4 text-sm font-semibold text-zinc-400 hover:text-zinc-50 transition-all duration-300'>
             <Library />
@@ -60,9 +46,12 @@ function SideBar() {
           </a>
           <button className='flex items-center hover:cursor-pointer transition-all duration-300 justify-between gap-1 text-sm font-semibold text-zinc-400 hover:text-zinc-50'>Recentes <ChevronDown /></button>
         </div>
-        <nav className='mt-2 overflow-auto h-screen'>
-          <ItemPlaylist img={ImageLike} title='Musicas Curtidas' type='Playlist' />
-          <ItemPlaylist img={FormaImage} title='>> ForMa' type='Single - Mauro Henrique' />
+        <nav className='mt-2 overflow-auto max-h-64'>
+          <ItemPlaylist img={ImageLike} title='Musicas Curtidas' type='Playlist' name='Playlist' />
+          <ItemPlaylist img={FormaImage} title='>> FørMa' type='Album' name='Album - Mauro Henrique' />
+          <ItemPlaylist img={AteuImage} title='ATEU' type='Album' name='Album - Mauro Henrique' />
+          <ItemPlaylist img={AdoqImage} title='Além do que os olhos podem ver' type='Album' name='Album - Oficina G3' />
+          <ItemPlaylist img={MaurinhoImage} title='Mauro Henrique' type='Artista' />
         </nav>
       </nav>
     </aside>
