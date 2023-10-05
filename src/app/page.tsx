@@ -1,6 +1,7 @@
 import { SideBar } from '@/components/SideBar';
 import { Main } from '@/components/Main';
 import React from 'react';
+import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -9,9 +10,7 @@ export default function Home() {
         <SideBar />
         <Main />
       </div>
-      <footer className='bg-zinc-800 border-zinc-700 p-6 w-screen'>
-        footer
-      </footer>
+      <Footer />
     </div>
   );
 }

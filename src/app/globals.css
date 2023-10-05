@@ -4,6 +4,7 @@
 
 ::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -14,19 +15,4 @@
 ::-webkit-scrollbar-track {
   background-color: #000; /* Cor da trilha (track) */
   border-radius: 1rem;
-}
-
-/* Personalização da barra de rolagem horizontal */
-/* Webkit (Chrome, Safari, Opera) */
-::-webkit-scrollbar-horizontal {
-  height: 10px;
-}
-
-::-webkit-scrollbar-thumb:horizontal {
-  background-color: #4a90e2; /* Cor da alça (thumb) horizontal */
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-track:horizontal {
-  background-color: #e0e0e0; /* Cor da trilha (track) horizontal */
 }

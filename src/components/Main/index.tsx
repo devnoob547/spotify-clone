@@ -38,10 +38,37 @@ function Main() {
       </div>
       <div className='mt-4 space-y-4 max-h-full'>
         <a href='' className='font-semibold text-2xl hover:underline-offset-4'>Feito para você</a>
-        <div className='flex items-center gap-4'>
-          <MadeForYou />
-          <MadeForYou />
-          <MadeForYou />
+        <div className='flex items-center gap-4 overflow-x-scroll pb-4'>
+          <MadeForYou
+            image={FormaImage}
+            title='>> FørMa'
+            description='Mauro Henrique, Fruto Sagrado, Oficina G3 e etc.'
+          />
+          <MadeForYou
+            image={FormaImage}
+            title='>> FørMa'
+            description='Mauro Henrique, Fruto Sagrado, Oficina G3 e etc.'
+          />
+          <MadeForYou
+            image={FormaImage}
+            title='>> FørMa'
+            description='Mauro Henrique, Fruto Sagrado, Oficina G3 e etc.'
+          />
+          <MadeForYou
+            image={FormaImage}
+            title='>> FørMa'
+            description='Mauro Henrique, Fruto Sagrado, Oficina G3 e etc.'
+          />
+          <MadeForYou
+            image={FormaImage}
+            title='>> FørMa'
+            description='Mauro Henrique, Fruto Sagrado, Oficina G3 e etc.'
+          />
+          <MadeForYou
+            image={FormaImage}
+            title='>> FørMa'
+            description='Mauro Henrique, Fruto Sagrado, Oficina G3 e etc.'
+          />
         </div>
       </div>
     </main>
