@@ -18,7 +18,7 @@ function checkHour() {
 
 function Main() {
   return (
-    <main className='flex-1 p-6 rounded-lg my-2 mr-2 bg-zinc-900 max-h-full'>
+    <main className='flex-1 p-6 rounded-lg my-2 mr-2 bg-zinc-900 max-h-full overflow-y-scroll'>
       <div className='flex items-center space-x-2'>
         <button className='bg-zinc-950 p-1 rounded-full'>
           <ChevronLeft />
@@ -36,9 +36,13 @@ function Main() {
         <MainPlaylist img={FormaImage} name='>> FørMa' />
         <MainPlaylist img={FormaImage} name='>> FørMa' />
       </div>
-      <div className='mt-4'>
-        <a href='' className='font-semibold text-2xl hover:underline-offset-4 underline-offset-auto'>Feito para você</a>
-        <MadeForYou />
+      <div className='mt-4 space-y-4 max-h-full'>
+        <a href='' className='font-semibold text-2xl hover:underline-offset-4'>Feito para você</a>
+        <div className='flex items-center gap-4'>
+          <MadeForYou />
+          <MadeForYou />
+          <MadeForYou />
+        </div>
       </div>
     </main>
   );
