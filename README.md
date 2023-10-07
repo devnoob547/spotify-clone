@@ -25,6 +25,9 @@ pnpm dev
 
 Open the address [http://localhost:3000/](http://localhost:3000/) in your browser.
 
+## Result
+![Alt text](./public/example.png)
+
 ## Technologies used
 
 * Next JS
